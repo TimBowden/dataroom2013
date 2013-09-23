@@ -51,11 +51,24 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DWFDataroomDocumentER\DWFDataroomDocumentER.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ContentTypes\DWFDataroomDocument\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{600a5cdb-fb45-4bcb-8437-8357e8b8bbcc}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\DWFDataroomFolder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a750a080-2842-44e5-aa52-7e5547fef695}</SharePointProjectItemId>
+    </None>
+    <None Include="DWFDataroomDocumentER\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1d57fdf9-1e11-4a45-a919-c70bddc97214}</SharePointProjectItemId>
+    </None>
+    <None Include="DWFDataroom\DWFDataroomInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3bbecd74-77b9-4bbc-b064-abfd19b3fa1a}</SharePointProjectItemId>
+    </None>
+    <None Include="DWFDataroom\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{96d02052-55a2-4195-a381-32a324ad7541}</SharePointProjectItemId>
     </None>
     <None Include="Features\DWFDataRoomLists\DWFDataRoomLists.feature">
       <FeatureId>{3568c669-d17f-4ef9-afae-7c1277f3a932}</FeatureId>
@@ -80,6 +93,15 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="ContentTypes\DWFDataroomDocument\Elements.xml" />
+    <Content Include="ContentTypes\DWFDataroomFolder\Elements.xml" />
+    <Content Include="DWFDataroomDocumentER\Elements.xml" />
+    <Content Include="DWFDataroom\DWFDataroomInstance\Elements.xml" />
+    <Content Include="DWFDataroom\EditDlg.htm" />
+    <Content Include="DWFDataroom\Elements.xml" />
+    <Content Include="DWFDataroom\FileDlg.htm" />
+    <Content Include="DWFDataroom\Repair.aspx" />
+    <Content Include="DWFDataroom\Schema.xml" />
+    <Content Include="DWFDataroom\Upload.aspx" />
     <Content Include="Features\DWFDataRoomLists\DWFDataRoomLists.Template.xml">
       <DependentUpon>DWFDataRoomLists.feature</DependentUpon>
     </Content>

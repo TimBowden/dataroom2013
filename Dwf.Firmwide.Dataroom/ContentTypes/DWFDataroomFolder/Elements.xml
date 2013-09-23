@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Folder (0x0120) -->
+  <ContentType ID="0x012000B87C3A133B03417BBB743508AE78DFB3" Name="DWFDataroomFolder" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{5AA6C088-CDA6-4175-8FD4-0D0B99924158}" DisplayName="Item Contact" Required="FALSE" Name="ItemContact" />
+      <FieldRef ID="{A451617E-FF31-40FA-B9AA-0A2E153B18AF}" DisplayName="Item Description" Required="FALSE" Name="ItemDescription" />
+      <FieldRef ID="{BEB4668F-CF3E-4739-83B4-472E17086F78}" DisplayName="Sort Order" Required="FALSE" Name="SortOrder" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
