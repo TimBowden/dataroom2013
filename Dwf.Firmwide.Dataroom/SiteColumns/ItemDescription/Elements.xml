@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
-       ID="{0c3d9028-ff76-4c89-9f24-850704d6ad85}"
+       ID="{A451617E-FF31-40FA-B9AA-0A2E153B18AF}"
        Name="ItemDescription"
        DisplayName="Item Description"
        Type="Note"

@@ -54,11 +54,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DWFDataroomDocument\SharePointProjectItem.spdata">
+    <None Include="ContentTypes\DWFDataroomDocument\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{600a5cdb-fb45-4bcb-8437-8357e8b8bbcc}</SharePointProjectItemId>
     </None>
-    <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{019cd15c-145a-45ea-94b8-e6c1dbb15a42}</FeatureId>
+    <None Include="Features\DWFDataRoomLists\DWFDataRoomLists.feature">
+      <FeatureId>{3568c669-d17f-4ef9-afae-7c1277f3a932}</FeatureId>
     </None>
     <None Include="SiteColumns\ItemContact\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{dd596261-e85a-423f-9dea-ed010b5ca145}</SharePointProjectItemId>
@@ -79,9 +79,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="DWFDataroomDocument\Elements.xml" />
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
+    <Content Include="ContentTypes\DWFDataroomDocument\Elements.xml" />
+    <Content Include="Features\DWFDataRoomLists\DWFDataRoomLists.Template.xml">
+      <DependentUpon>DWFDataRoomLists.feature</DependentUpon>
     </Content>
     <Content Include="SiteColumns\ItemContact\Elements.xml" />
     <Content Include="SiteColumns\ItemDescription\Elements.xml" />

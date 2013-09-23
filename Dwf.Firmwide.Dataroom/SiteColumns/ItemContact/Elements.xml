@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
-       ID="{4efbc88d-61a2-45fa-ab31-17920466cdd5}"
+       ID="{5AA6C088-CDA6-4175-8FD4-0D0B99924158}"
        Name="ItemContact"
        DisplayName="Item Contact"
        Type="User"
