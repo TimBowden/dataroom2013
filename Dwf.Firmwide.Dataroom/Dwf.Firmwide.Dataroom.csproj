@@ -54,19 +54,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataroomSortOrder\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{750cf42c-b6c2-46e1-add8-880a60b0241c}</SharePointProjectItemId>
-    </None>
     <None Include="DWFDataroomDocument\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{600a5cdb-fb45-4bcb-8437-8357e8b8bbcc}</SharePointProjectItemId>
     </None>
     <None Include="Features\Feature1\Feature1.feature">
       <FeatureId>{019cd15c-145a-45ea-94b8-e6c1dbb15a42}</FeatureId>
     </None>
-    <None Include="ItemContact\SharePointProjectItem.spdata">
+    <None Include="SiteColumns\ItemContact\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{dd596261-e85a-423f-9dea-ed010b5ca145}</SharePointProjectItemId>
     </None>
-    <None Include="ItemDescription\SharePointProjectItem.spdata">
+    <None Include="SiteColumns\ItemDescription\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6ddbc58f-da0e-4436-a3e1-044f31f73e90}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
@@ -76,18 +73,19 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="SiteColumns\SortOrder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{02230239-598b-4523-bc08-95a5fd5eaee8}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="SiteColumns\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DataroomSortOrder\Elements.xml" />
     <Content Include="DWFDataroomDocument\Elements.xml" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
-    <Content Include="ItemContact\Elements.xml" />
-    <Content Include="ItemDescription\Elements.xml" />
+    <Content Include="SiteColumns\ItemContact\Elements.xml" />
+    <Content Include="SiteColumns\ItemDescription\Elements.xml" />
+    <Content Include="SiteColumns\SortOrder\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

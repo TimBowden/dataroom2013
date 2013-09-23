@@ -4,7 +4,7 @@
        ID="{4efbc88d-61a2-45fa-ab31-17920466cdd5}"
        Name="ItemContact"
        DisplayName="Item Contact"
-       Type="Text"
+       Type="User"
        Required="FALSE"
        Group="Custom Site Columns">
   </Field>
