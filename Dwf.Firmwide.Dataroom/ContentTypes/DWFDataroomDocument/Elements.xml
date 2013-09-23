@@ -7,5 +7,21 @@
       <FieldRef ID="{b615f059-9b32-4703-a2b6-d20d91ac6f1e}" DisplayName="Sort Order" Required="FALSE" Name="SortOrder" />
       <FieldRef ID="{4efbc88d-61a2-45fa-ab31-17920466cdd5}" DisplayName="Item Contact" Required="FALSE" Name="ItemContact" />
     </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>DWFDRItemEventReceiverAdding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>10000</SequenceNumber>
+            <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+            <Class>$SharePoint.Type.ec181fb2-9482-41fe-83d6-4ac50cb428cc.FullName$</Class>
+            <SolutionId>$SharePoint.Package.Id$</SolutionId>
+            <Data></Data>
+            <Filter></Filter>
+          </Receiver>
+        </Receivers>
+      </XmlDocument>
+    </XmlDocuments>
   </ContentType>
 </Elements>

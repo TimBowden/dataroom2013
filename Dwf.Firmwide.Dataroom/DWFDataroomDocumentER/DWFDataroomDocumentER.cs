@@ -3,12 +3,15 @@ using System.Security.Permissions;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Utilities;
 using Microsoft.SharePoint.Workflow;
+using System.Runtime.InteropServices;
+using Microsoft.SharePoint;
 
 namespace Dwf.Firmwide.Dataroom.DWFDataroomDocumentER
 {
     /// <summary>
     /// List Item Events
     /// </summary>
+    [Guid("ec181fb2-9482-41fe-83d6-4ac50cb428cc")]
     public class DWFDataroomDocumentER : SPItemEventReceiver
     {
         /// <summary>
