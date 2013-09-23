@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="922840d2-c736-4f31-bb6a-5a225ce4cff5" solutionId="922840d2-c736-4f31-bb6a-5a225ce4cff5" resetWebServer="false" sharePointProductVersion="15.0" name="Dwf.Firmwide.Dataroom" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="019cd15c-145a-45ea-94b8-e6c1dbb15a42" />
+  </features>
+</package>

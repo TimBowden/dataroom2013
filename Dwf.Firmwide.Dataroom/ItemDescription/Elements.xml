@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0c3d9028-ff76-4c89-9f24-850704d6ad85}"
+       Name="ItemDescription"
+       DisplayName="Item Description"
+       Type="Note"
+       Required="FALSE"
+       Group="DWF Dataroom">
+  </Field>
+</Elements>
