@@ -5,6 +5,8 @@ using Microsoft.SharePoint.Utilities;
 using Microsoft.SharePoint.Workflow;
 using System.Runtime.InteropServices;
 using Microsoft.SharePoint;
+using Microsoft.WindowsAzure;
+
 
 namespace Dwf.Firmwide.Dataroom.DWFDataroomDocumentER
 {
@@ -14,6 +16,8 @@ namespace Dwf.Firmwide.Dataroom.DWFDataroomDocumentER
     [Guid("ec181fb2-9482-41fe-83d6-4ac50cb428cc")]
     public class DWFDataroomDocumentER : SPItemEventReceiver
     {
+
+                
         /// <summary>
         /// An item is being added.
         /// </summary>
@@ -60,6 +64,20 @@ namespace Dwf.Firmwide.Dataroom.DWFDataroomDocumentER
         public override void ItemAdded(SPItemEventProperties properties)
         {
             base.ItemAdded(properties);
+
+            Dwf.Firmwide.Dataroom.AzureMobileService.RequestDetails msrDetails = new Dwf.Firmwide.Dataroom.AzureMobileService.RequestDetails()
+            {
+                ListId = properties.ListId,
+                DisplayName = properties.ListItem.Title,
+                DocumentLink = new Uri(properties.WebUrl.ToString() + "/" + properties.ListItem.Url.ToString())
+            };
+
+            AzureMobileService ms = new AzureMobileService();
+
+            ms.MobileServicesRequest = msrDetails;
+
+            ms.AsyncPostToMobileService();
+
         }
 
         /// <summary>
